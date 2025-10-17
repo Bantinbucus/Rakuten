@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rakuten - Mua sắm trực tuyến tiện lợi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+    <header class="top-bar">
+        <div class="container">
+            <div class="top-bar__info">Miễn phí giao hàng toàn quốc cho đơn từ 500.000₫</div>
+            <nav class="top-bar__nav">
+                <a href="#chinh-sach">Chính sách</a>
+                <a href="#ho-tro">Hỗ trợ</a>
+                <a href="#theo-doi-don">Theo dõi đơn</a>
+            </nav>
+        </div>
+    </header>
+
+    <header class="header">
+        <div class="container">
+            <a class="logo" href="#">Rakuten</a>
+            <nav class="main-nav">
+                <a href="#noi-bat">Nổi bật</a>
+                <a href="#danh-muc">Danh mục</a>
+                <a href="#sale">Khuyến mãi</a>
+                <a href="#blog">Blog</a>
+                <a href="#lien-he">Liên hệ</a>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" aria-label="Tìm kiếm sản phẩm">
+                    <span class="icon icon-search"></span>
+                </button>
+                <button class="icon-btn" aria-label="Danh sách yêu thích">
+                    <span class="icon icon-heart"></span>
+                </button>
+                <button class="icon-btn" aria-label="Giỏ hàng">
+                    <span class="icon icon-cart"></span>
+                    <span class="badge" id="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="noi-bat">
+            <div class="container hero__content">
+                <div class="hero__text">
+                    <span class="badge badge--highlight">Bộ sưu tập mới</span>
+                    <h1>Thăng hoa phong cách cùng Rakuten</h1>
+                    <p>Khám phá hàng nghìn sản phẩm chính hãng từ các thương hiệu uy tín, cập nhật xu hướng thời trang và công nghệ mới nhất.</p>
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" href="#sale">Khám phá ưu đãi</a>
+                        <a class="btn btn--ghost" href="#danh-muc">Xem danh mục</a>
+                    </div>
+                    <ul class="hero__stats">
+                        <li>
+                            <strong>2500+</strong>
+                            <span>Thương hiệu đối tác</span>
+                        </li>
+                        <li>
+                            <strong>98%</strong>
+                            <span>Khách hàng hài lòng</span>
+                        </li>
+                        <li>
+                            <strong>1 triệu+</strong>
+                            <span>Đơn hàng mỗi năm</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero__media">
+                    <div class="hero-card">
+                        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=500&q=80" alt="Khách hàng mua sắm" />
+                        <div class="hero-card__body">
+                            <p class="hero-card__title">Bộ sưu tập Thu Đông 2024</p>
+                            <span class="hero-card__price">Giảm đến 45%</span>
+                        </div>
+                    </div>
+                    <div class="hero-highlight">
+                        <strong>Giao nhanh trong 2h</strong>
+                        <p>Áp dụng tại Hà Nội &amp; TP.HCM cho sản phẩm có biểu tượng tia chớp.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category" id="danh-muc">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge badge--neutral">Danh mục hot</span>
+                    <h2>Trọn vẹn mọi phong cách</h2>
+                    <p>Lựa chọn đa dạng từ thời trang, làm đẹp đến điện tử, gia dụng.</p>
+                </div>
+                <div class="category__grid">
+                    <article class="category-card" data-filter="thoi-trang">
+                        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80" alt="Thời trang" />
+                        <div>
+                            <h3>Thời trang</h3>
+                            <p>Cập nhật xu hướng mỗi ngày cùng bộ sưu tập độc quyền.</p>
+                        </div>
+                    </article>
+                    <article class="category-card" data-filter="cong-nghe">
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" alt="Công nghệ" />
+                        <div>
+                            <h3>Công nghệ</h3>
+                            <p>Thiết bị thông minh chính hãng, bảo hành toàn quốc.</p>
+                        </div>
+                    </article>
+                    <article class="category-card" data-filter="lam-dep">
+                        <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=600&q=80" alt="Làm đẹp" />
+                        <div>
+                            <h3>Làm đẹp</h3>
+                            <p>Mỹ phẩm, dưỡng da, chăm sóc tóc cho mọi nhu cầu.</p>
+                        </div>
+                    </article>
+                    <article class="category-card" data-filter="nha-cua">
+                        <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=600&q=80" alt="Nhà cửa" />
+                        <div>
+                            <h3>Nhà cửa &amp; đời sống</h3>
+                            <p>Hoàn thiện tổ ấm với đồ gia dụng tiện nghi, bền đẹp.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="product" id="sale">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge badge--neutral">Flash Sale</span>
+                    <h2>Săn deal sốc mỗi ngày</h2>
+                    <p>Thêm sản phẩm yêu thích vào giỏ hàng chỉ với vài cú click.</p>
+                </div>
+                <div class="product__filters">
+                    <button class="filter-btn active" data-filter="tat-ca">Tất cả</button>
+                    <button class="filter-btn" data-filter="thoi-trang">Thời trang</button>
+                    <button class="filter-btn" data-filter="cong-nghe">Công nghệ</button>
+                    <button class="filter-btn" data-filter="lam-dep">Làm đẹp</button>
+                </div>
+                <div class="product__grid" id="product-list">
+                    <article class="product-card" data-category="thoi-trang">
+                        <span class="product-card__tag">Mới</span>
+                        <img src="https://images.unsplash.com/photo-1525171254930-643fc658b64c?auto=format&fit=crop&w=600&q=80" alt="Áo khoác len" />
+                        <h3>Áo khoác len dáng dài</h3>
+                        <p class="product-card__description">Chất liệu len Merino mềm mại, giữ ấm tối ưu trong mùa lạnh.</p>
+                        <div class="product-card__footer">
+                            <div>
+                                <span class="price">1.250.000₫</span>
+                                <span class="price price--old">1.560.000₫</span>
+                            </div>
+                            <button class="btn btn--small btn--primary add-to-cart">Thêm</button>
+                        </div>
+                    </article>
+                    <article class="product-card" data-category="cong-nghe">
+                        <span class="product-card__tag">Giảm 30%</span>
+                        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Tai nghe" />
+                        <h3>Tai nghe chống ồn Active Pro</h3>
+                        <p class="product-card__description">Tận hưởng âm thanh sống động với công nghệ khử tiếng ồn chủ động.</p>
+                        <div class="product-card__footer">
+                            <div>
+                                <span class="price">2.990.000₫</span>
+                                <span class="price price--old">4.290.000₫</span>
+                            </div>
+                            <button class="btn btn--small btn--primary add-to-cart">Thêm</button>
+                        </div>
+                    </article>
+                    <article class="product-card" data-category="lam-dep">
+                        <span class="product-card__tag">Bestseller</span>
+                        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80" alt="Bộ skincare" />
+                        <h3>Bộ skincare chuyên sâu</h3>
+                        <p class="product-card__description">Bộ sản phẩm tái tạo da 5 bước từ thương hiệu Glow &amp; Co.</p>
+                        <div class="product-card__footer">
+                            <div>
+                                <span class="price">1.850.000₫</span>
+                                <span class="price price--old">2.450.000₫</span>
+                            </div>
+                            <button class="btn btn--small btn--primary add-to-cart">Thêm</button>
+                        </div>
+                    </article>
+                    <article class="product-card" data-category="cong-nghe">
+                        <span class="product-card__tag">Hot</span>
+                        <img src="https://images.unsplash.com/photo-1512499617640-c2f999098c01?auto=format&fit=crop&w=600&q=80" alt="Smartwatch" />
+                        <h3>Đồng hồ thông minh Pulse X</h3>
+                        <p class="product-card__description">Theo dõi sức khỏe 24/7, pin dùng 10 ngày, chống nước 5ATM.</p>
+                        <div class="product-card__footer">
+                            <div>
+                                <span class="price">3.490.000₫</span>
+                                <span class="price price--old">3.990.000₫</span>
+                            </div>
+                            <button class="btn btn--small btn--primary add-to-cart">Thêm</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature" id="chinh-sach">
+            <div class="container feature__grid">
+                <article class="feature-card">
+                    <span class="icon icon-shipping"></span>
+                    <h3>Giao hàng miễn phí</h3>
+                    <p>Miễn phí vận chuyển với mọi đơn từ 500.000₫ trên toàn quốc.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="icon icon-shield"></span>
+                    <h3>Thanh toán an toàn</h3>
+                    <p>Hỗ trợ ví điện tử, thẻ tín dụng, chuyển khoản và COD.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="icon icon-support"></span>
+                    <h3>Hỗ trợ 24/7</h3>
+                    <p>Đội ngũ CSKH trực tuyến qua chat, hotline và email.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="icon icon-return"></span>
+                    <h3>Đổi trả 30 ngày</h3>
+                    <p>Đổi trả miễn phí trong 30 ngày nếu sản phẩm lỗi hoặc không vừa.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="review" id="ho-tro">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge badge--neutral">Cộng đồng Rakuten</span>
+                    <h2>Khách hàng nói gì?</h2>
+                    <p>Hơn 10.000 đánh giá 5 sao từ người dùng trên toàn quốc.</p>
+                </div>
+                <div class="review__grid">
+                    <article class="review-card">
+                        <div class="review-card__rating" aria-label="5 trên 5 sao">
+                            <span>★★★★★</span>
+                        </div>
+                        <p>"Giao hàng rất nhanh, sản phẩm đúng như mô tả. Rakuten luôn có deal tốt vào cuối tuần!"</p>
+                        <h3>Hồng Nhung</h3>
+                        <span>Quận 7, TP.HCM</span>
+                    </article>
+                    <article class="review-card">
+                        <div class="review-card__rating" aria-label="4 trên 5 sao">
+                            <span>★★★★☆</span>
+                        </div>
+                        <p>"Đặt hàng dễ dàng, thanh toán linh hoạt. CSKH phản hồi tin nhắn trong 5 phút."</p>
+                        <h3>Trường Giang</h3>
+                        <span>Hoàn Kiếm, Hà Nội</span>
+                    </article>
+                    <article class="review-card">
+                        <div class="review-card__rating" aria-label="5 trên 5 sao">
+                            <span>★★★★★</span>
+                        </div>
+                        <p>"Ưng nhất là chương trình đổi trả trong 30 ngày. Mình mua quà tặng yên tâm hơn."</p>
+                        <h3>Thanh Thảo</h3>
+                        <span>Nha Trang, Khánh Hòa</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog" id="blog">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge badge--neutral">Blog &amp; xu hướng</span>
+                    <h2>Góc cảm hứng từ Rakuten</h2>
+                    <p>Cập nhật mẹo mua sắm, review sản phẩm và xu hướng mới nhất.</p>
+                </div>
+                <div class="blog__grid">
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80" alt="Xu hướng thu đông" />
+                        <div class="blog-card__body">
+                            <span class="blog-card__tag">Thời trang</span>
+                            <h3>5 xu hướng Thu Đông không thể bỏ lỡ</h3>
+                            <p>Mix &amp; match layer cá tính với các item từ Rakuten Collection.</p>
+                            <a href="#" class="blog-card__link">Đọc tiếp</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1510552776732-01acc9a4c036?auto=format&fit=crop&w=600&q=80" alt="Công nghệ gia đình" />
+                        <div class="blog-card__body">
+                            <span class="blog-card__tag">Công nghệ</span>
+                            <h3>Nhà thông minh trong tầm tay</h3>
+                            <p>Gợi ý thiết bị biến căn hộ của bạn trở nên hiện đại, tiện nghi.</p>
+                            <a href="#" class="blog-card__link">Đọc tiếp</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=600&q=80" alt="Chăm sóc da" />
+                        <div class="blog-card__body">
+                            <span class="blog-card__tag">Làm đẹp</span>
+                            <h3>Routine chăm sóc da cho dân văn phòng</h3>
+                            <p>Bảo vệ làn da trước máy lạnh và ánh sáng xanh.</p>
+                            <a href="#" class="blog-card__link">Đọc tiếp</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" id="lien-he">
+            <div class="container cta__content">
+                <div>
+                    <h2>Đăng ký nhận ưu đãi độc quyền</h2>
+                    <p>Nhận thông báo flash sale, voucher và sự kiện dành riêng cho thành viên Rakuten.</p>
+                </div>
+                <form class="cta__form">
+                    <label class="sr-only" for="newsletter-email">Email</label>
+                    <input type="email" id="newsletter-email" placeholder="Nhập email của bạn" required />
+                    <button type="submit" class="btn btn--primary">Đăng ký</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div>
+                <a class="logo" href="#">Rakuten</a>
+                <p>Kết nối khách hàng với sản phẩm chất lượng, dịch vụ tận tâm và trải nghiệm mua sắm đáng nhớ.</p>
+                <div class="social">
+                    <a href="#" aria-label="Facebook" class="icon icon-facebook"></a>
+                    <a href="#" aria-label="Instagram" class="icon icon-instagram"></a>
+                    <a href="#" aria-label="YouTube" class="icon icon-youtube"></a>
+                </div>
+            </div>
+            <div>
+                <h3>Thông tin</h3>
+                <ul>
+                    <li><a href="#">Về Rakuten</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Điều khoản &amp; điều kiện</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Hỗ trợ</h3>
+                <ul>
+                    <li><a href="#">Trung tâm trợ giúp</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Giao hàng &amp; thanh toán</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Liên hệ</h3>
+                <ul>
+                    <li>Email: support@rakuten.vn</li>
+                    <li>Hotline: 1900 1234</li>
+                    <li>Địa chỉ: 123 Nguyễn Huệ, Q.1, TP.HCM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2024 Rakuten Vietnam. Đã đăng ký bản quyền.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="floating-cart" aria-label="Mở giỏ hàng">
+        <span class="icon icon-cart"></span>
+        <span class="badge" id="floating-cart-count">0</span>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
